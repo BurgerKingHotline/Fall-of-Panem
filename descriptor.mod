@@ -9,7 +9,7 @@ tags={
 	"Gameplay"
 	"Ideologies"
 }
-name="Beyond Earth"
+name="Fall of Panem"
 supported_version="1.10.1"
 
 replace_path="gfx/flags"
