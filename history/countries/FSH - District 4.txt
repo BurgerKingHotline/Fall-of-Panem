@@ -7,6 +7,12 @@ set_technology = {
 
 set_convoys = 5
 
+add_ideas = {
+	defenseless
+	d4_economy
+	dependent_economy
+}
+
 set_politics = {
 	ruling_party = loyalist
 	last_election = "1936.1.1"

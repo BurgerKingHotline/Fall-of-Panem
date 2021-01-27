@@ -1,0 +1,23 @@
+request_capitol = {
+	allowed = {
+		OR = {
+			tag = LXR
+			tag = MSN
+			tag = TEC
+			tag = FSH
+			tag = POW
+			tag = TRN
+			tag = LMB
+			tag = TXT
+			tag = GRN
+			tag = LVS
+			tag = CRP
+			tag = MIN
+			tag = NCL
+		}
+	}
+
+	available = {
+		is_subject_of = CAP
+	}
+}

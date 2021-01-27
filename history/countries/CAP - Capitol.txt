@@ -5,6 +5,11 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	colonial_economy
+	expanded_military
+}
+
 set_convoys = 5
 
 set_politics = {
@@ -13,6 +18,34 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+puppet = LXR
+puppet = MSN
+puppet = TEC
+puppet = FSH
+puppet = POW
+puppet = TRN
+puppet = LMB
+puppet = TXT
+puppet = GRN
+puppet = LVS
+puppet = CRP
+puppet = MIN
+
+create_faction = Panem
+add_to_faction = CAP
+add_to_faction = LXR
+add_to_faction = MSN
+add_to_faction = TEC
+add_to_faction = FSH
+add_to_faction = POW
+add_to_faction = TRN
+add_to_faction = LMB
+add_to_faction = TXT
+add_to_faction = GRN
+add_to_faction = LVS
+add_to_faction = CRP
+add_to_faction = MIN
 
 set_popularities = {
 	loyalist = 100

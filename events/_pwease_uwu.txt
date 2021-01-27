@@ -1,0 +1,80 @@
+add_namespace = district
+
+country_event = { #asking "Pwease Mista Capitow, wet us mobiwize :pleading_face:"
+	id = district.1
+	title = district.1.t
+	desc = district.1.d
+	picture = GFX_report_event_fascist_militia
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.1.a #No
+		ai_chance = {
+			factor = 20
+		}
+		every_country = {
+			limit = { has_country_flag = let_us_mobilize }
+			add_popularity = {
+				ideology = rebellious
+				popularity = 0.05
+			}
+			add_opinion_modifier = {
+				target = CAP
+				modifier = protest_action_light 
+			}
+			country_event = district.2
+			clr_country_flag = let_us_mobilize
+		}
+	}
+
+	option = {
+		name = district.1.b #Yes
+		ai_chance = {
+			factor = 20
+		}
+		every_country = {
+			limit = { has_country_flag = let_us_mobilize }
+			if = {
+				limit = { has_idea = expanded_military }
+				add_ideas = all_for_the_army
+			}
+			if = {
+				limit = { has_idea = armed_people }
+				add_ideas = expanded_military
+			}
+			if = {
+				limit = { has_idea = defenseless }
+				add_ideas = armed_people
+			}
+			country_event = district.3
+			clr_country_flag = let_us_mobilize
+		}
+	}
+}
+
+country_event = { #capitol denies mobilization
+	id = district.2
+	title = district.2.t
+	desc = district.2.d
+	picture = GFX_report_event_crowd_in_prague
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.2.a #Darn
+	}
+}
+
+country_event = { #capitol allows mobilization
+	id = district.3
+	title = district.3.t
+	desc = district.3.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.3.a #Yay
+	}
+}

@@ -6,6 +6,12 @@ set_technology = {
 
 set_convoys = 5
 
+add_ideas = {
+	militia
+	generic_economy
+	independent_economy
+}
+
 set_politics = {
 	ruling_party = rebellious
 	last_election = "1936.1.1"

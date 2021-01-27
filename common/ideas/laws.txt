@@ -1,0 +1,565 @@
+ideas = {
+	
+	mobilization_laws = { 
+		law = yes
+		use_list_view = yes
+
+		militia = {
+
+			picture = volunteer_only
+
+			cost = 100
+			removal_cost = -1
+			level = 6
+
+			available = {
+				has_government = rebellious
+			}
+
+			modifier = {
+				conscription = 0.05
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		defenseless = {
+
+			picture = disarmed_nation
+
+			cost = 100
+			removal_cost = -1
+			level = 5
+
+			available = {
+				has_government = loyalist
+			}
+
+			modifier = {
+				conscription = 0.03
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		armed_people = {
+
+			picture = volunteer_only 
+
+			cost = 100
+			removal_cost = -1
+			level = 4
+
+			available = {
+				has_government = loyalist
+				NOT = {
+					is_subject_of = CAP
+				}
+			}
+
+			modifier = {
+				conscription = 0.06
+				training_time_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		expanded_military = {
+
+			picture = limited_conscription 
+
+			cost = 100
+			removal_cost = -1
+			level = 3
+
+			available = {
+				has_government = loyalist
+				NOT = {
+					is_subject_of = CAP
+				}
+			}
+
+			modifier = {
+				conscription = 0.1
+				training_time_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+		}
+
+		all_for_the_army = {
+
+			picture = service_by_requirement 
+
+			cost = 100
+			removal_cost = -1
+			level = 2
+
+			available = {
+				has_government = loyalist
+				NOT = {
+					is_subject_of = CAP
+				}
+			}
+
+			modifier = {
+				conscription = 0.2
+				training_time_factor = 0.15
+				production_speed_buildings_factor = -0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		rebellious_spirit = {
+
+			picture = extensive_conscription
+
+			cost = 100
+			removal_cost = -1
+			level = 1
+
+			available = {
+				has_government = rebellious
+			}
+
+			ai_will_do = {
+				factor = 4
+				modifier = {
+					factor = 2
+					has_war = yes
+				}
+			}
+
+			modifier = {
+				conscription = 0.4
+				training_time_factor = 0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				local_resources_factor = -0.1
+				mobilization_speed = 0.1
+			}
+
+			cancel_if_invalid = no
+		}
+
+	}
+
+	economy = { 
+		law = yes
+		use_list_view = yes
+
+		generic_economy = {
+
+			picture = civilian_economy
+
+			cost = 100
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+
+			default = yes
+
+		}
+
+		d1_economy = {
+
+			picture = civilian_economy
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = LXR
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				min_export = 0.3
+				political_power_gain = 0.1
+			}
+
+		}
+
+		d2_economy = {
+
+			picture = generic_exploit_mines
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = MSN
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				min_export = 0.2
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+			}
+
+		}
+
+		d3_economy = {
+
+			picture = generic_research_bonus
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = TEC
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				min_export = 0.1
+				research_speed_factor = 0.1
+			}
+
+		}
+
+		d4_economy = {
+
+			picture = generic_coastal_navy
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = FSH
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				min_export = 0.25
+				monthly_population = 0.1
+			}
+
+		}
+
+		d5_economy = {
+
+			picture = generic_pp_unity_bonus
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = POW
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				min_export = 0.1
+				local_resources_factor = -0.05
+				base_fuel_gain_factor = 0.75
+				production_speed_buildings_factor = 0.1
+			}
+
+		}
+
+		d6_economy = {
+
+			picture = generic_build_infrastructure
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = TRN
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				min_export = 0.2
+				recruitable_population_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+				stability_factor = -0.05
+			}
+
+		}
+
+		d7_economy = {
+
+			picture = generic_exploit_mines
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = LMB
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				min_export = 0.15
+				recruitable_population_factor = 0.1
+			}
+
+		}
+
+		d8_economy = {
+
+			picture = generic_goods_red_bonus
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = TXT
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				min_export = 0.1
+				production_speed_arms_factory_factor = 0.05
+			}
+
+		}
+
+		d9_economy = {
+
+			picture = generic_goods_red_bonus
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = GRN
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				min_export = 0.2
+				monthly_population = 0.05
+			}
+
+		}
+
+		d10_economy = {
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = LVS
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				min_export = 0.25
+				heat_attrition_factor = -0.1
+			}
+
+		}
+
+		d11_economy = {
+
+			picture = civilian_economy
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = CRP
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.35
+				min_export = 0.35
+				local_resources_factor = 0.05
+			}
+
+		}
+
+		d12_economy = {
+
+			picture = generic_exploit_mines
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = MIN
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				min_export = 0.25
+				local_resources_factor = 0.15
+			}
+
+		}
+
+		d13_economy = {
+
+			picture = war_economy
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = NCL
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_speed_arms_factory_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.05
+			}
+
+		}
+
+		cap_war_economy = {
+
+			picture = war_economy
+
+			cost = 100
+			removal_cost = -1
+
+			allowed = {
+				tag = CAP
+			}
+
+			available = {
+				OR = {
+					has_war = yes
+					has_war_support > 0.7
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				conscription = 0.01
+			}
+
+		}
+
+	}
+
+	trade_laws = { 
+		law = yes
+		use_list_view = yes
+
+		dependent_economy = {
+
+			picture = isolation 
+
+			available = {
+				is_subject = yes
+			}
+
+			cost = 100
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.5
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.1
+				industrial_capacity_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 25.0
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		semi_independent_economy = {
+
+			picture = civilian_economy 
+
+			available = {
+				is_subject = yes
+				num_of_factories > 50 #probably gonna be balanced later
+			}
+
+			cost = 100
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.35
+				consumer_goods_factor = 0.05
+				industrial_capacity_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+				civilian_intel_to_others = 10.0
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		independent_economy = {
+
+			picture = low_economic_mobilisation 
+
+			available = {
+				is_subject = no
+			}
+
+			cost = 100
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.2
+				political_power_gain = 0.05
+				production_speed_buildings_factor = 0.1
+				civilian_intel_to_others = -5.0
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		colonial_economy = {
+
+			picture = war_economy 
+
+			available = {
+				is_subject = no
+				num_subjects > 0
+			}
+
+			cost = 100
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.1
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = 0.05
+				local_resources_factor = 0.1
+				civilian_intel_to_others = 10.0
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+	}
+
+}

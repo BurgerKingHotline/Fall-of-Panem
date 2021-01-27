@@ -5,6 +5,12 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+add_ideas = {
+	defenseless
+	d1_economy
+	dependent_economy
+}
+
 set_convoys = 5
 
 set_politics = {

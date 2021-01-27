@@ -1,0 +1,133 @@
+request_capitol = {
+	
+	request_mobilization = {
+
+		cost = 100
+
+		icon = generic_nationalism
+
+		days_re_enable = 50
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war_support > 0.5
+				add = 2
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				rebellious > 0.1
+				add = 2
+			}
+		}
+
+		available = {
+			is_subject_of = CAP
+			NOT = {
+				has_idea = all_for_the_army
+			}
+		}
+
+		complete_effect = {
+			CAP = {
+				country_event = district.1
+			}
+			hidden_effect = {
+				set_country_flag = let_us_mobilize
+			}
+		}
+	}
+
+	promote_self_sufficiency = {
+
+		cost = 75
+
+		icon = generic_factory
+
+		days_re_enable = 60
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 2
+				rebellious > 0.2
+			}
+			modifier = {
+				factor = 2
+				num_of_factories > 20
+			}
+		}
+
+		available = {
+			is_subject_of = CAP
+		}
+
+		days_remove = 30
+
+		modifier = {
+			rebellious_drift = 0.1
+			consumer_goods_factor = 0.05
+		}
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = { 
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	request_peacekeeper_aid = {
+
+		cost = 50
+
+		icon = eng_blackshirt_march
+
+		days_re_enable = 7
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				add = 2
+				rebellious > 0.2
+			}
+			modifier = {
+				factor = 1.5
+				rebellious > 0.3
+			}
+		}
+
+		available = {
+			rebellious > 0.1
+			is_subject_of = CAP
+		}
+
+		days_remove = 28
+
+		modifier = {
+			stability_weekly_factor = -0.02
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = rebellious
+				popularity = -0.05
+			}
+		}
+	}
+
+}
