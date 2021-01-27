@@ -2,14 +2,14 @@ state={
 	id=83
 	name="STATE_83"
 	provinces={
-		10 159 248 275 295 349 353 385 523 598 643 654 738 759 831 840 882 965 1080 1088 1263 1284 1527 1531 1533 1534 
+		866 1118 543 619 9 10 248 353 385 523 598 643 738 759 831 882 1080 1088 1263 1527 1531 
 	}
 	manpower=1
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
-		owner = TST
-		add_core_of = TST
+		owner = FSH
+		add_core_of = FSH
 		buildings = {
 			infrastructure = 3
 		}

@@ -8,8 +8,8 @@ state={
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
-		owner = CRP
-		add_core_of = CRP
+		owner = LVS
+		add_core_of = LVS
 		buildings = {
 			infrastructure = 3
 		}
