@@ -1,0 +1,103 @@
+ideologies = {
+
+	loyalist = {
+		
+		types = {
+		
+			capitol = {
+			}
+			
+			district = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_LOYALIST_1"
+			"FACTION_NAME_LOYALIST_2"
+			"FACTION_NAME_LOYALIST_3"
+			"FACTION_NAME_LOYALIST_4"
+			"FACTION_NAME_LOYALIST_5"
+		}
+		
+		color = { 255 50 50 }
+		
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		can_collaborate = yes
+		
+		modifiers = {
+			puppet_cost_factor = -0.25
+			civilian_intel_to_others = 10.0
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+	
+	rebellious = {
+	
+		types = {
+			
+			vengeance = {
+			}
+		
+			freedom = {
+			}
+		
+			opportunity = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_REBELLIOUS_1"
+			"FACTION_NAME_REBELLIOUS_2"
+			"FACTION_NAME_REBELLIOUS_3"
+			"FACTION_NAME_REBELLIOUS_4"
+			"FACTION_NAME_REBELLIOUS_5"
+			"FACTION_NAME_REBELLIOUS_6"
+		}
+		
+		color = { 3 149 255 }
+		
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = no
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 1.0		#Rebels, they gonna have an impact
+		faction_impact_on_world_tension = 0.5
+		
+		modifiers = {
+			generate_wargoal_tension = 0.25
+			join_faction_tension = 0.50
+			lend_lease_tension = 0.10
+			send_volunteers_tension = 0.250
+			annex_cost_factor = 0.5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+}

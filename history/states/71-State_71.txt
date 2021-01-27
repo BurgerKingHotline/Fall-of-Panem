@@ -4,6 +4,16 @@ state={
 	provinces={
 		7 109 232 396 774 937 994 1103 1245 1265 
 	}
-	manpower=0
+	manpower=32000
+	state_category = large_city
 	buildings_max_level_factor=1.000
+	history = {
+		owner = CAP
+		add_core_of = CAP
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 3
+			arms_factory = 1
+		}
+	}
 }

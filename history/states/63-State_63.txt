@@ -4,6 +4,14 @@ state={
 	provinces={
 		3 6 28 30 47 52 72 95 98 106 165 183 186 201 208 210 219 221 243 255 261 276 277 278 296 322 381 397 408 416 439 453 521 582 632 636 670 672 702 737 758 772 797 799 822 843 844 876 890 895 936 1007 1020 1061 1081 1147 1209 1298 1310 1355 1358 1362 1366 1370 1371 1372 1382 1387 1389 1397 
 	}
-	manpower=0
+	manpower=1
+	state_category = town
 	buildings_max_level_factor=1.000
+	history = {
+		owner = LXR
+		add_core_of = LXR
+		buildings = {
+			infrastructure = 3
+		}
+	}
 }

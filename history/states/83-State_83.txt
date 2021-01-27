@@ -4,6 +4,14 @@ state={
 	provinces={
 		10 159 248 275 295 349 353 385 523 598 643 654 738 759 831 840 882 965 1080 1088 1263 1284 1527 1531 1533 1534 
 	}
-	manpower=0
+	manpower=1
+	state_category = town
 	buildings_max_level_factor=1.000
+	history = {
+		owner = TST
+		add_core_of = TST
+		buildings = {
+			infrastructure = 3
+		}
+	}
 }

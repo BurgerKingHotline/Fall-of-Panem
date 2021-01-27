@@ -4,6 +4,14 @@ state={
 	provinces={
 		1569 
 	}
-	manpower=0
+	manpower=1
+	state_category = town
+	history = {
+		owner = FSH
+		add_core_of = FSH
+		buildings = {
+			infrastructure = 3
+		}
+	}
 	buildings_max_level_factor=1.000
 }

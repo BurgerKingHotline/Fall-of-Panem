@@ -4,6 +4,14 @@ state={
 	provinces={
 		5 64 108 138 189 305 331 332 367 384 403 405 417 490 537 548 603 614 621 627 664 677 686 688 715 743 768 795 810 833 885 919 992 1037 1062 1071 1091 1104 1113 1119 1130 1136 1153 1208 1254 1336 1386 1396 1406 1417 1419 1425 1436 
 	}
-	manpower=0
+	manpower=1
+	state_category = town
 	buildings_max_level_factor=1.000
+	history = {
+		owner = GRN
+		add_core_of = GRN
+		buildings = {
+			infrastructure = 3
+		}
+	}
 }

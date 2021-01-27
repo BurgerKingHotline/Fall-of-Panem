@@ -4,6 +4,14 @@ state={
 	provinces={
 		124 170 172 198 240 282 301 375 480 538 549 581 687 716 720 727 855 894 901 905 943 944 956 1021 1087 1155 1163 1165 1191 1210 1241 1251 1283 1311 1510 1522 1526 1530 
 	}
-	manpower=0
+	manpower=1
+	state_category = town
 	buildings_max_level_factor=1.000
+	history = {
+		owner = FSH
+		add_core_of = FSH
+		buildings = {
+			infrastructure = 3
+		}
+	}
 }
