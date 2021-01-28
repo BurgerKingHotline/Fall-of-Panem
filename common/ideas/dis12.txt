@@ -1,0 +1,119 @@
+ideas = {
+	
+	country = {
+
+	}
+
+	political_advisor = {
+
+		madge_undersee = {
+
+			picture = tur_halide_edib_adivar
+
+			allowed = {
+				original_tag = MIN
+			}
+
+			available = {
+				NOT = {
+					has_war = yes
+				}
+			}
+
+			traits = { silent_workhorse }
+		}
+
+		haymitch_abernathy = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = MIN
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					rebellious > 0.2
+					factor = 2
+				}
+			}
+
+			traits = { hg_victor }
+		}
+
+		mrs_everdeen = {
+
+			picture = ENG_sylvia_pankhurst 
+
+			allowed = {
+				original_tag = MIN
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			traits = { healer }
+		}
+
+		romulus_thread = {
+
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = MIN
+			}
+
+			available = {
+				has_government = loyalist
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					add = 1
+					AND = {
+						rebellious > 0.2
+						rebellious < 0.4
+					}
+				}
+			}
+
+			traits = { peacekeeper_trait prince_of_terror }
+		}
+
+	}
+
+	high_command = {
+
+		gale_hawthorn = {
+
+			ledger = army
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = MIN
+			}
+
+			available = {
+				has_government = rebellious
+			}
+		
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+}

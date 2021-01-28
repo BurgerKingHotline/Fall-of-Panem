@@ -1,0 +1,28 @@
+ideas = {
+	
+	political_advisor = {
+
+		porter_tripp = {
+
+			picture = tur_halide_edib_adivar
+
+			allowed = {
+				original_tag = POW
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					rebellious > 0.2
+					factor = 2
+				}
+			}
+
+			traits = { hg_victor }
+		}
+
+	}
+
+}

@@ -1,0 +1,127 @@
+ideas = {
+	
+	political_advisor = {
+
+		boggs = {
+
+			picture = generic_army_african_4
+
+			allowed = {
+				original_tag = NCL
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 2
+			}
+
+			available = {
+				has_government = rebellious
+			}
+
+			traits = { indomitable_perseverance }
+		}
+
+		patricia_leguinn = {
+
+			picture = ENG_mary_sophia_allen
+
+			allowed = {
+				original_tag = NCL
+			}
+
+			ai_will_do = {
+				factor = 2
+			}
+
+			available = {
+				has_government = rebellious
+			}
+
+			traits = { technocrat }
+		}
+
+		calvin_selstropp = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = NCL
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 2
+			}
+
+			available = {
+				has_government = rebellious
+			}
+
+			traits = { war_industrialist }
+		}
+
+		plutarch_heavensbee = {
+
+			picture = generic_political_advisor_europe_4
+
+			allowed = {
+				original_tag = NCL
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			available = {
+				has_government = rebellious
+			}
+
+			traits = { propaganda_expert }
+		}
+
+	}
+
+	high_command = {
+
+		homes = {
+
+			ledger = army
+
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = MIN
+			}
+
+			available = {
+				has_government = rebellious
+			}
+		
+			traits = { army_infantry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		john_cannon = {
+
+			ledger = air
+			
+			allowed = {
+				original_tag = NCL
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,28 @@
+ideas = {
+	
+	political_advisor = {
+
+		lyme = {
+
+			picture = ENG_sylvia_pankhurst 
+
+			allowed = {
+				original_tag = MSN
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 0
+				modifier = {
+					rebellious > 0.1
+					add = 1
+				}
+			}
+
+			traits = { hg_victor }
+		}
+
+	}
+
+}

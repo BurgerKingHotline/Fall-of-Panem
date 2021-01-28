@@ -1,0 +1,416 @@
+ideas = {
+	
+	political_advisor = {
+
+		generic_peacekeeper = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				NOT = {
+					OR = {
+						tag = NCL
+						tag = MIN
+						tag = CAP
+					}
+				}
+			}
+
+			cost = 100
+
+			available = {
+				NOT = {
+					has_government = rebellious
+				}
+			}
+			
+			traits = { peacekeeper_trait }
+	
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					add = 1
+					AND = {
+						rebellious > 0.2
+						rebellious < 0.4
+					}
+				}
+			}
+		}
+
+		generic_smuggler = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				NOT = {
+					OR = {
+						tag = NCL
+						tag = CAP
+						tag = TST
+					}
+				}
+			}
+
+			cost = 100
+
+			available = {
+				NOT = {
+					has_government = rebellious
+				}
+			}
+			
+			traits = { smuggler }
+	
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					num_of_factories < 10
+					add = 1
+				}
+			}
+		}
+
+	}
+
+	tank_manufacturer = { 
+	
+		designer = yes
+		
+		generic_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		generic_naval_manufacturer = {
+
+			picture = generic_naval_manufacturer_1
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				naval_equipment  = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		generic_light_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				NOT = { 
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		generic_medium_aircraft_manufacturer = {
+			
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+
+	}
+
+	industrial_concern = {
+
+		generic_industrial_concern = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+
+		generic_electronics_concern = {
+			
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+
+	}
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		generic_motorized_equipment_manufacturer = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				OR = {
+					tag = TRN
+					tag = CAP
+					tag = MSN
+					tag = NCL
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+		
+		generic_infantry_equipment_manufacturer = {
+			
+			picture = generic_infantry_equipment_manufacturer_2
+
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		generic_artillery_manufacturer = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+
+	}
+
+	army_chief = {
+
+		generic_army_chief_off = {
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { army_chief_offensive_1 }
+		}
+
+		generic_army_chief_def = {
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { army_chief_defensive_1 }
+		}
+
+	}
+
+	air_chief = {
+
+		generic_air_close_air_sup = {
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { air_close_air_support_2 }
+		}
+	
+		generic_air_chief_all_weather = {
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { air_chief_all_weather_2 }			
+		}
+	}
+
+	high_command = {
+
+		generic_army_art = {
+			ledger = army
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { army_artillery_1 }			
+		}
+		
+		generic_army_log = {
+			ledger = army
+
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { army_logistics_2 }			
+		}
+
+	}
+
+	theorist = {
+
+		generic_military_theorist = {
+			ledger = army
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+	
+		generic_naval_theorist = {
+			ledger = navy
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		generic_air_warfare_theorist = {
+			ledger = air
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+}

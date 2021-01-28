@@ -1,0 +1,28 @@
+ideas = {
+	
+	political_advisor = {
+
+		augustus_braun = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = LXR
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					rebellious > 0.2
+					factor = 2
+				}
+			}
+
+			traits = { hg_victor }
+		}
+
+	}
+
+}

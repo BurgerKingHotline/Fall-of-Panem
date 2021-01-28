@@ -1,0 +1,77 @@
+leader_traits = {
+	
+	hg_victor = {
+		random = no
+		sprite = 13
+
+		rebellious_drift = 0.1
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	rebel_trait = {
+		random = no
+		sprite = 13
+
+		rebellious_drift = 0.05
+		consumer_goods_factor = -0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	peacekeeper_trait = {
+		random = no
+		sprite = 13
+
+		loyalist_drift = 0.1
+		political_power_gain = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	healer = {
+		random = no
+		sprite = 13
+
+		stability_factor = 0.05
+		conscription_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	head_peacekeeper = {
+		random = no
+		sprite = 14
+
+		resistance_damage_to_garrison = -0.1
+		army_core_defence_factor = 0.05
+		rebellious_drift = -0.05
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	smuggler = {
+		sprite = 10
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.05
+		consumer_goods_factor = -0.04
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

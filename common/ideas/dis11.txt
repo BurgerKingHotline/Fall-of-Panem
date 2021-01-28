@@ -1,0 +1,28 @@
+ideas = {
+	
+	political_advisor = {
+
+		GRN_rebel = {
+
+			picture = generic_political_advisor_african_2
+
+			allowed = {
+				original_tag = GRN
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					rebellious > 0.2
+					factor = 2
+				}
+			}
+
+			traits = { rebel_trait }
+		}
+
+	}
+
+}

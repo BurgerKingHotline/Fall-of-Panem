@@ -1,0 +1,87 @@
+ideas = {
+	
+	political_advisor = {
+
+		caesar_flickerman = {
+
+			picture = generic_political_advisor_europe_2
+
+			allowed = {
+				original_tag = CAP
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { propaganda_expert compassionate_gentleman}
+		}
+
+		alan_peace = {
+
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = CAP
+			}
+
+			available = {
+				has_government = loyalist
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			traits = { prince_of_terror }
+		}
+
+		egeria = {
+
+			picture = tur_halide_edib_adivar
+
+			allowed = {
+				original_tag = CAP
+			}
+
+			available = {
+				has_government = loyalist
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { editor }
+		}
+
+		antonius = {
+
+			picture = generic_political_advisor_europe_4
+
+			allowed = {
+				original_tag = CAP
+			}
+
+			available = {
+				has_government = loyalist
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 2
+			}
+
+			traits = { head_peacekeeper }
+		}
+
+	}
+
+}

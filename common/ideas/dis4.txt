@@ -1,0 +1,28 @@
+ideas = {
+	
+	political_advisor = {
+
+		finnick_odair = {
+
+			picture = generic_political_advisor_europe_4
+
+			allowed = {
+				original_tag = FSH
+			}
+
+			cost = 100
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					rebellious > 0.2
+					factor = 2
+				}
+			}
+
+			traits = { hg_victor }
+		}
+
+	}
+
+}
