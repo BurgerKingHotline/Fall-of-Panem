@@ -34,3 +34,10 @@
  independent_economy:0 "Independent Economy"
  colonial_economy:0 "Colonial Economy"
  colonial_economy_desc:0 "We can outsource some of our industrial needs onto our new subjects, and make sure that they provide for us."
+#13
+ fertility:0 "Infertile Population"
+ fertility_1:0 "Infertile Population"
+ fertility_2:0 "Infertile Population"
+ fertility_3:0 "Infertile Population"
+ fertility_end:0 "Infertile Population"
+
