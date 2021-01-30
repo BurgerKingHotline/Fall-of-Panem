@@ -13,8 +13,7 @@ country_event = { #asking "Pwease Mista Capitow, wet us mobiwize :pleading_face:
 		ai_chance = {
 			factor = 20
 		}
-		every_country = {
-			limit = { has_country_flag = let_us_mobilize }
+		FROM = {
 			add_popularity = {
 				ideology = rebellious
 				popularity = 0.05
@@ -24,7 +23,6 @@ country_event = { #asking "Pwease Mista Capitow, wet us mobiwize :pleading_face:
 				modifier = protest_action_light 
 			}
 			country_event = district.2
-			clr_country_flag = let_us_mobilize
 		}
 	}
 
@@ -33,8 +31,7 @@ country_event = { #asking "Pwease Mista Capitow, wet us mobiwize :pleading_face:
 		ai_chance = {
 			factor = 20
 		}
-		every_country = {
-			limit = { has_country_flag = let_us_mobilize }
+		FROM = {
 			if = {
 				limit = { has_idea = expanded_military }
 				add_ideas = all_for_the_army
@@ -48,7 +45,6 @@ country_event = { #asking "Pwease Mista Capitow, wet us mobiwize :pleading_face:
 				add_ideas = armed_people
 			}
 			country_event = district.3
-			clr_country_flag = let_us_mobilize
 		}
 	}
 }

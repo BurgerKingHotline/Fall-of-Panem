@@ -11,7 +11,7 @@ state={
 		owner = CRP
 		add_core_of = CRP
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 		}
 	}
 }

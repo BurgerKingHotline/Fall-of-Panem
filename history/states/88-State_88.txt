@@ -1,0 +1,18 @@
+state={
+	id=88
+	name="STATE_88"
+	provinces={
+		288 16 43 83 112 204 207 251 279 357 476 512 658 662 747 770 784 818 841 918 926 961 964 1096 1111 1135 1203 1268 1278 1301 1303 1329 1338 1479 1490 1492 1517 1525 
+	}
+	manpower=29020
+	state_category = town
+	buildings_max_level_factor=1.000
+	history = {
+		owner = TXT
+		add_core_of = TXT
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		} 
+	}
+}

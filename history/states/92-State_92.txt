@@ -1,0 +1,17 @@
+state={
+	id=92
+	name="STATE_92"
+	provinces={
+		258 505 597 604 611 804 826 1139 1274 1340 1409
+	}
+	manpower=452
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	history = {
+		owner = MIN
+		add_core_of = MIN
+		buildings = {
+			infrastructure = 1
+		} 
+	}
+}

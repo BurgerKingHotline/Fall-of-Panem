@@ -1,0 +1,19 @@
+state={
+	id=85
+	name="STATE_85"
+	provinces={
+		318 334 447 468 661 940 990 1025 1032 1059 1181 1305 1323 1332 1454
+	}
+	manpower=250000
+	state_category = town
+	buildings_max_level_factor=1.000
+	history = {
+		owner = TRN
+		add_core_of = TRN
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+		} 
+	}
+}

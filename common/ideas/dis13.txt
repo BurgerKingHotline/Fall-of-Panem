@@ -17,7 +17,7 @@ ideas = {
 			
 			modifier = {
 				monthly_population = -0.1
-				recruitable_population = -0.15
+				conscription_factor = -0.1
 			}
 		}
 

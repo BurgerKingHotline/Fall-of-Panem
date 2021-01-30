@@ -1,0 +1,17 @@
+state={
+	id=86
+	name="STATE_86"
+	provinces={
+		15 38 51 60 73 139 197 249 260 280 326 329 333 346 401 419 494 507 514 539 551 573 707 739 781 823 847 896 904 930 932 983 995 1015 1043 1090 1170 1195 1257 1321 1339 1368 1383 1393
+	}
+	manpower=1
+	state_category = rural
+	buildings_max_level_factor=1.000
+	history = {
+		owner = TST
+		add_core_of = TST
+		buildings = {
+			infrastructure = 4
+		} 
+	}
+}

@@ -4,14 +4,15 @@ state={
 	provinces={
 		18 26 78 93 100 127 133 135 229 238 328 402 443 501 529 540 567 575 605 618 637 644 645 671 681 685 696 733 750 801 850 864 880 948 950 967 981 1022 1063 1105 1158 1226 1255 1292 1295 1304 1448 1456 1457 1459 1462 1467 1482 
 	}
-	manpower=1
+	manpower=56033
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = MSN
 		add_core_of = MSN
 		buildings = {
-			infrastructure = 3
+			infrastructure = 7
+			industrial_complex = 1
 		} 
 	}
 }

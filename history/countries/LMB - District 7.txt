@@ -1,4 +1,6 @@
-﻿capital = 20
+﻿capital = 10
+
+oob = "AAA_filler"
 
 # Starting tech
 set_technology = {

@@ -4,14 +4,15 @@ state={
 	provinces={
 		42 162 213 223 230 269 324 542 554 612 721 778 835 887 1026 1031 1060 1093 1106 1199 1223 
 	}
-	manpower=1
-	state_category = town
+	manpower=28400
+	state_category = rural
 	buildings_max_level_factor=1.000
 	history = {
 		owner = MSN
 		add_core_of = MSN
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
+			industrial_complex = 1
 		}
 	}
 }

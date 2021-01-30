@@ -2,16 +2,16 @@ state={
 	id=29
 	name="STATE_29"
 	provinces={
-		256 455 729 748 789 1126 1180 1288 1309 1472 
+		117 254 455 642 649 729 881 1126 1180 1222 1238 1293 1309 1460
 	}
-	manpower=1
-	state_category = town
+	manpower=22000
+	state_category = rural
 	buildings_max_level_factor=1.000
 	history = {
 		owner = MSN
 		add_core_of = MSN
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 		}
 	}
 }

@@ -2,16 +2,18 @@ state={
 	id=24
 	name="STATE_24"
 	provinces={
-		89 130 409 498 502 631 652 655 760 792 897 923 979 1337 1428 1435 1441 
+		89 103 130 147 304 409 448 484 498 502 544 593 631 652 655 760 792 897 915 923 927 979 1127 1187 1228 1337 1428 1435 1441 1455
 	}
-	manpower=1
+	manpower=52320
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = CRP
 		add_core_of = CRP
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 }

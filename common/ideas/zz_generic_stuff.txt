@@ -308,6 +308,21 @@ ideas = {
 
 	}
 
+	navy_chief = {
+
+		generic_navy_chief_decisive_bat = {
+			
+			allowed = {
+				NOT = {
+					tag = TST
+				}
+			}
+			
+			traits = { navy_screen_1 }
+		}
+
+	}
+
 	air_chief = {
 
 		generic_air_close_air_sup = {

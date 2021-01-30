@@ -2,17 +2,18 @@ state={
 	id=26
 	name="STATE_26"
 	provinces={
-		290 69 87 203 215 266 395 464 485 488 583 633 651 884 1000 1046 1051 1190 1219 1230 1271 1281 1314 1437 1440 1444 1450 1453 1466 1473 
+		290 87 266 395 485 488 651 1046 1051 1190 1230 1314 1437 1440 1444 1450 1453 1473
 	}
-	manpower=134345
-	state_category = town
+	manpower=832345
+	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = POW
 		add_core_of = POW
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 1
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
 		}
 	}
 }

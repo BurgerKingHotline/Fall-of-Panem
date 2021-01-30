@@ -1,0 +1,18 @@
+state={
+	id=87
+	name="STATE_87"
+	provinces={
+		19 216 257 272 274 372 431 809 839 903 1074 1097 1192 1260 1272 1302 1400 1401 1408 1411 1426
+	}
+	manpower=202000
+	state_category = town
+	buildings_max_level_factor=1.000
+	history = {
+		owner = TRN
+		add_core_of = TRN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		} 
+	}
+}

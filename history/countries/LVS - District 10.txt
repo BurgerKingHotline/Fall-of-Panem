@@ -1,5 +1,7 @@
 ﻿capital = 75
 
+oob = "AAA_filler"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

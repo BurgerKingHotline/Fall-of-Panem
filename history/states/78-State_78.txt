@@ -2,16 +2,18 @@ state={
 	id=78
 	name="STATE_78"
 	provinces={
-		105 140 308 348 493 584 668 800 806 845 911 939 1167 1248 1261 1333 1491 1495 1499 
+		105 140 308 348 493 584 668 720 727 800 806 845 911 939 1163 1165 1167 1248 1261 1333 1491 1495 1499 1526
 	}
-	manpower=1
-	state_category = town
+	manpower=51023
+	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = FSH
 		add_core_of = FSH
 		buildings = {
-			infrastructure = 3
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
 		}
 	}
 }

@@ -1,0 +1,18 @@
+state={
+	id=99
+	name="STATE_99"
+	provinces={
+		227 340 451 533 569 615 617 711 765 788 886 999 1011 1179 1198 1207 1218 1277 1392 1403 1405 1410
+	}
+	manpower=8342
+	state_category = town
+	buildings_max_level_factor=1.000
+	history = {
+		owner = LXR
+		add_core_of = LXR
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+	}
+}

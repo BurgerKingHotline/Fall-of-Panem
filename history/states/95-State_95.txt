@@ -1,0 +1,18 @@
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		101 121 149 163 214 234 253 291 297 314 323 345 506 518 701 706 735 746 775 867 869 883 985 1005 1010 1027 1128 1133 1144 1177 1186 1240 1253 1319 1398 1399 1413
+	}
+	manpower=6467
+	state_category = town
+	buildings_max_level_factor=1.000
+	history = {
+		owner = GRN
+		add_core_of = GRN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+		}
+	}
+}

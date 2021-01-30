@@ -35,9 +35,6 @@ request_capitol = {
 			CAP = {
 				country_event = district.1
 			}
-			hidden_effect = {
-				set_country_flag = let_us_mobilize
-			}
 		}
 	}
 

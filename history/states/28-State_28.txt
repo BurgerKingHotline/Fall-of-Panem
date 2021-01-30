@@ -2,16 +2,17 @@ state={
 	id=28
 	name="STATE_28"
 	provinces={
-		236 362 487 697 859 1214 1289 1469 
+		236 362 487 697 712 740 859 1175 1214 1289 1469 
 	}
-	manpower=1
+	manpower=3200
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = LVS
 		add_core_of = LVS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 6
+			arms_factory = 1
 		}
 	}
 }

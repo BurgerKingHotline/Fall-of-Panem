@@ -1,0 +1,18 @@
+state={
+	id=91
+	name="STATE_91"
+	provinces={
+		66 281 298 309 347 376 399 442 517 646 764 830 998 1047 1173 1183 1259 1335 1442 1443 1458 1475
+	}
+	manpower=2612
+	state_category = rural
+	buildings_max_level_factor=1.000
+	history = {
+		owner = MIN
+		add_core_of = MIN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		} 
+	}
+}
