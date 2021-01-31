@@ -1,0 +1,17 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = rebellious
+			ROOT = {
+				has_government = loyalist
+			}
+		}
+		AND = {
+			has_government = loyalist
+			ROOT = {
+				has_government = rebellious
+			}
+		}
+	}
+}

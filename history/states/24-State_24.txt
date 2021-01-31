@@ -5,6 +5,9 @@ state={
 		89 103 130 147 304 409 448 484 498 502 544 593 631 652 655 760 792 897 915 923 927 979 1127 1187 1228 1337 1428 1435 1441 1455
 	}
 	manpower=52320
+	resources={
+		steel = 1
+	}
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {

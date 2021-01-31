@@ -5,6 +5,9 @@ state={
 		86 264 360 373 423 458 481 483 650 732 745 791 889 942 997 1140 1164 1168 1243 1493 1496 1505 
 	}
 	manpower=12020
+	resources={
+		tungsten=6
+	}
 	state_category = pastoral
 	buildings_max_level_factor=1.000
 	history = {
