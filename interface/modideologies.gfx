@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_rebellious_group"
+		texturefile = "gfx//interface//ideologies//rebellious_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_loyalist_group"
+		texturefile = "gfx//interface//ideologies//loyalist_group.dds"
+	}
+}
