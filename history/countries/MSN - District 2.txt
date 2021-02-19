@@ -28,15 +28,15 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Anti-Peacekeeper"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_6.dds"
+	name = "District 2"
+	picture = "gfx/leaders/District2.dds"
 	expire = "1965.1.1"
 	ideology = vengeance
 }
 
 create_country_leader = {
-	name = "Peacekeeper"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_6.dds"
+	name = "District 2"
+	picture = "gfx/leaders/Capitol2.dds"
 	expire = "1965.1.1"
 	ideology = district
 }

@@ -29,7 +29,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Alma Coin"
-	picture = "gfx/leaders/NCL/Portrait_Alma_Coin.dds"
+	picture = "gfx/leaders/Portrait_Alma_Coin.dds"
 	expire = "1965.1.1"
 	ideology = opportunity
 }

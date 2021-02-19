@@ -28,15 +28,15 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Lumberjack"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_6.dds"
+	name = "District 7"
+	picture = "gfx/leaders/District7.dds"
 	expire = "1965.1.1"
 	ideology = freedom
 }
 
 create_country_leader = {
-	name = "Redwood"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_6.dds"
+	name = "District 7"
+	picture = "gfx/leaders/Capitol2.dds"
 	expire = "1965.1.1"
 	ideology = district
 }

@@ -28,15 +28,15 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Speedster"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_6.dds"
+	name = "District 6"
+	picture = "gfx/leaders/District6.dds"
 	expire = "1965.1.1"
 	ideology = vengeance
 }
 
 create_country_leader = {
-	name = "Brutality"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_6.dds"
+	name = "District 6"
+	picture = "gfx/leaders/Capitol2.dds"
 	expire = "1965.1.1"
 	ideology = district
 }
