@@ -74,3 +74,48 @@ country_event = { #capitol allows mobilization
 		name = district.3.a #Yay
 	}
 }
+
+country_event = { #rebels ask D13 for aid
+	id = district.4
+	title = district.4.t
+	desc = district.4.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.4.a #Yay
+		ai_chance = {
+			base = 10
+		}
+		add_to_faction = FROM
+		FROM = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+			}
+		}
+	}
+	option = {
+		name = district.4.b #nah
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+news_event = { #bombing of hunger games
+	id = district.5
+	title = district.5.t
+	desc = district.5.d
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.5.a #Yay
+		ai_chance = {
+			base = 10
+		}
+	}
+}

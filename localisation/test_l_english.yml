@@ -1,10 +1,10 @@
 ﻿l_english:
- TST_loyalist:0 ""
- TST_loyalist_DEF:0 ""
- TST_rebellious:0 ""
- TST_rebellious_DEF:0 ""
- TST_loyalist_ADJ:0 ""
- TST_rebellious_ADJ:0 ""
+ TST_loyalist:0 "The Wilds"
+ TST_loyalist_DEF:0 "the Wilds"
+ TST_rebellious:0 "The Wilds"
+ TST_rebellious_DEF:0 "the Wilds"
+ TST_loyalist_ADJ:0 "Anarchist"
+ TST_rebellious_ADJ:0 "Anarchist"
  #
  CAP_loyalist:0 "Capitol"
  CAP_loyalist_DEF:0 "the Capitol"

@@ -1,0 +1,75 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				news_event = { id = district.5 days = 3 }
+			}
+			71 = {
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = CAP
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = LUX
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = LMB
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = TEC
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = FSH
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = POW
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = TRN
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = MSN
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = TXT
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = GRN
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = LVS
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = CRP
+			}
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = MIN
+			}
+		}
+		11 = {
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = NCL
+			}
+		}
+		94 = {
+			create_unit = {
+				division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+				owner = NCL
+			}
+		}
+		}
+	}
+}

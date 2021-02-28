@@ -8,6 +8,9 @@ set_technology = {
 
 add_ideas = fertility
 
+create_faction = the_rebellion
+add_to_faction = NCL
+
 set_convoys = 5
 
 add_ideas = {
@@ -32,4 +35,10 @@ create_country_leader = {
 	picture = "gfx/leaders/Portrait_Alma_Coin.dds"
 	expire = "1965.1.1"
 	ideology = opportunity
+}
+create_country_leader = {
+	name = "Coriolanus Snow"
+	picture = "gfx/leaders/Capitol.dds"
+	expire = "1965.1.1"
+	ideology = capitol
 }
