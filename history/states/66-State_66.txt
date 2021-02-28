@@ -5,11 +5,17 @@ state={
 		94 954 819 953 1249 728 374 1421 1224 1438 56 358 452 561 580 639 666 678 718 846 1013 1056 1121 1172 1225 1330 1434 1445 
 	}
 	manpower=332453
+	resources={
+		steel=4
+	}
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = TRN
 		add_core_of = TRN
+		victory_points = {
+			718 10
+		}
 		buildings = {
 			infrastructure = 9
 			industrial_complex = 2

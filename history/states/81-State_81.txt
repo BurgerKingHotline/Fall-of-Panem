@@ -10,6 +10,9 @@ state={
 	history = {
 		owner = FSH
 		add_core_of = FSH
+		victory_points = {
+			905 5
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

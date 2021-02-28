@@ -5,11 +5,21 @@ state={
 		85 293 335 341 343 365 389 508 587 591 691 730 794 957 1006 1040 1100 1154 1237 1285 1287 1291 1320 1414 1420 1423 1429
 	}
 	manpower=97300
+	resources={
+		aluminium = 2
+		chromium = 2
+	}
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = TEC
 		add_core_of = TEC
+		victory_points = {
+			1285 15
+		}
+		victory_points = {
+			591 5
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

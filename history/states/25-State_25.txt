@@ -10,6 +10,9 @@ state={
 	history = {
 		owner = CAP
 		add_core_of = CAP
+		victory_points = {
+			1416 10
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

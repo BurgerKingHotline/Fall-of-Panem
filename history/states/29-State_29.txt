@@ -5,6 +5,9 @@ state={
 		117 254 455 642 649 729 881 1126 1180 1222 1238 1293 1309 1460
 	}
 	manpower=22000
+	resources={
+		chromium = 2
+	}
 	state_category = rural
 	buildings_max_level_factor=1.000
 	history = {

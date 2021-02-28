@@ -5,11 +5,18 @@ state={
 		53 131 155 156 185 190 199 344 434 473 572 610 630 663 731 755 780 805 821 1041 1069 1094 1099 1102 1115 1145 1213 1221 1250 1432 1451 1477
 	}
 	manpower=4973
+	resources={
+		steel=18
+		oil=10
+	}
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = MIN
 		add_core_of = MIN
+		victory_points = {
+			1094 5
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
