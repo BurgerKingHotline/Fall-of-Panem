@@ -375,6 +375,22 @@ aid_rebel_cells = {
 
 	}
 
+	CAP_war_effort = {
+		fire_only_once = yes
+		visible = {
+			is_ai = yes
+			has_war_with = CAP
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 1000
+		modifier = {
+			ai_focus_aggressive_factor = 0.5
+			ai_focus_defense_factor = -0.5
+		}
+	}
+
 }
 
 capitol_decisions = {
@@ -532,6 +548,119 @@ capitol_decisions = {
 					instant_build = yes
 				}
 			}
+		}
+
+	}
+
+}
+
+war_measures = {
+	
+	draft_troops = {
+
+		icon = generic_industry
+
+		available = {
+			has_war = yes
+			has_manpower > 1000
+			has_equipment = {
+				infantry_equipment > 100
+			}
+		}
+
+		days_re_enable = 20
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.9
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			random_owned_controlled_state = {
+				limit = { is_capital = yes }
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+			add_manpower = -1000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100
+			}
+		}
+
+	}
+
+	expand_production = {
+
+		icon = generic_factory
+
+		cost = 50
+
+		available = {
+			has_war = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		modifier = {
+			industrial_capacity_factory = 0.1
+			production_speed_buildings_factor = -0.1
+		}
+
+	}
+
+	hold_line = {
+
+		icon = oppression
+
+		cost = 25
+
+		available = {
+			has_war = yes
+			surrender_progress > 0
+		}
+
+		fire_only_once = yes
+
+		days_remove = 100
+
+		modifier = {
+			army_defence_factor = 0.1
+		}
+
+	}
+
+	force_conscription = {
+
+		icon = generic_civil_support
+
+		available = {
+			has_war = yes
+			has_stability > 0.1
+		}
+
+		cost = 50
+
+		days_re_enable = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			add_manpower = 500
+			add_stability = -0.03
 		}
 
 	}

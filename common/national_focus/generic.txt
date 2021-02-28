@@ -1727,6 +1727,10 @@ focus_tree = {
 		y = 0
 		cost = 2
 
+		available = {
+			NOT = { tag = TST }
+		}
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -1883,10 +1887,9 @@ focus_tree = {
 				white_peace = ROOT
 			}
 			add_war_support = 0.05
-			create_wargoal = {
+			declare_war_on = {
 				target = CAP
 				type = topple_government
-				expire = 0
 			}
 		}
 	}
