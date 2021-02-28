@@ -10,8 +10,6 @@ tags={
 	"Ideologies"
 }
 name="Fall of Panem"
-supported_version="1.10.1"
-
 replace_path="gfx/flags"
 replace_path="gfx/flags/medium"
 replace_path="gfx/flags/small"
@@ -39,3 +37,5 @@ replace_path="country_leader"
 replace_path="gfx/loadingscreens"
 replace_path="history/states"
 replace_path="music"
+supported_version="1.10.*"
+remote_file_id="2410777902"
