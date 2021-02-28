@@ -5,20 +5,11 @@ state={
 		13 70 445 477 492 710 898 1039 1185 1233 1394 1395
 	}
 	manpower=62251
-	resources={
-		tungsten=4
-	}
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = NCL
 		add_core_of = NCL
-		victory_points = {
-			1185 25
-		}
-		victory_points = {
-			1395 5
-		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3

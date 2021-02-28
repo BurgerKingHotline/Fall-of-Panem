@@ -5,9 +5,6 @@ state={
 		66 281 298 309 347 376 399 442 517 646 764 830 998 1047 1173 1183 1259 1335 1442 1443 1458 1475
 	}
 	manpower=2612
-	resources={
-		aluminium=7
-	}
 	state_category = rural
 	buildings_max_level_factor=1.000
 	history = {

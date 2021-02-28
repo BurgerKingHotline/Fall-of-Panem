@@ -5,18 +5,11 @@ state={
 		692 1117 963 3 6 28 30 47 52 98 106 165 183 186 243 322 381 397 453 521 636 670 702 737 758 772 799 822 843 890 895 936 1147 1298 1310 1358 1370 1382 1387 1389 1397
 	}
 	manpower=3650
-	resources={
-		aluminium = 3
-		tungsten = 2
-	}
 	state_category = town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = LXR
 		add_core_of = LXR
-		victory_points = {
-			381 5
-		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1

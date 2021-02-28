@@ -5,20 +5,11 @@ state={
 		290 87 266 395 485 488 651 1046 1051 1190 1230 1314 1437 1440 1444 1450 1453 1473
 	}
 	manpower=832345
-	resources={
-		aluminium = 3
-	}
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = POW
 		add_core_of = POW
-		victory_points = {
-			1046 15
-		}
-		victory_points = {
-			651 5
-		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

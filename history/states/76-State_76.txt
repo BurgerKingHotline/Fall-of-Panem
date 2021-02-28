@@ -5,20 +5,11 @@ state={
 		299 1433 4 82 146 182 313 315 338 356 380 383 393 525 589 602 606 613 849 856 870 872 899 952 960 984 1023 1024 1075 1084 1107 1125 1194 1276 1447 1464 1483 1484 
 	}
 	manpower=72321
-	resources={
-		aluminium = 3
-	}
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	history = {
 		owner = MSN
 		add_core_of = MSN
-		victory_points = {
-			899 15
-		}
-		victory_points = {
-			1024 5
-		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

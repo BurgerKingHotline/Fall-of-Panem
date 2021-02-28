@@ -10,15 +10,6 @@ state={
 	history = {
 		owner = LXR
 		add_core_of = LXR
-		victory_points = {
-			110 15
-		}
-		victory_points = {
-			532 5
-		}
-		victory_points = {
-			520 5
-		}
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 2

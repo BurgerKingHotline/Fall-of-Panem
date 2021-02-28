@@ -5,10 +5,6 @@ state={
 		866 1118 543 619 9 10 248 523 598 738 831 882 1080 1088 1263 1527 1531 
 	}
 	manpower=3200
-	resources={
-		chromium = 4
-		aluminium = 2
-	}
 	state_category = pastoral
 	buildings_max_level_factor=1.000
 	history = {

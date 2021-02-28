@@ -10,9 +10,6 @@ state={
 	history = {
 		owner = TXT
 		add_core_of = TXT
-		victory_points = {
-			1347 10
-		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
