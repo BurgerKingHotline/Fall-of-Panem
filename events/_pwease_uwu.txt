@@ -108,7 +108,7 @@ news_event = { #bombing of hunger games
 	id = district.5
 	title = district.5.t
 	desc = district.5.d
-	picture = GFX_news_event_nuke
+	picture = GFX_news_event_explosionofhunger
 
 	is_triggered_only = yes
 
