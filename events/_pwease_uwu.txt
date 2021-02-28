@@ -119,3 +119,35 @@ news_event = { #bombing of hunger games
 		}
 	}
 }
+
+country_event = { #CAP demands more resources
+	id = district.6
+	title = district.6.t
+	desc = district.6.d
+	picture = GFX_report_event_us_panay_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.6.a #oh no
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = { #CAP expands_peacekeeper duties
+	id = district.7
+	title = district.7.t
+	desc = district.7.d
+	picture = GFX_report_event_fascist_militia
+
+	is_triggered_only = yes
+
+	option = {
+		name = district.7.a #oh no
+		ai_chance = {
+			base = 10
+		}
+	}
+}

@@ -20,6 +20,25 @@ ideas = {
 
 		}
 
+		purged_peacekeepers = {
+
+			picture = chi_army_corruption
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.001
+				political_power_factor = -0.05
+				conscription = 0.01
+				war_support_factor = 0.05
+			}
+
+		}
+
 		adept_military = {
 
 			picture = FRA_scw_intervention_nationalists_focus
@@ -51,6 +70,60 @@ ideas = {
 			modifier = {
 				training_time_factor = -0.1
 				conscription = 0.05
+			}
+
+		}
+
+		D13_rebel_cells = {
+
+			picture = SPA_la_division_azul
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				rebellious_drift = 0.1
+				stability_factor = -0.05
+			}
+
+		}
+
+		increased_export_quotas = {
+
+			picture = generic_local_self_management
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				rebellious_drift = 0.05
+				min_export = 0.2
+				industrial_capacity_factory = 0.05
+				overlord_trade_cost_factor = -0.25
+			}
+
+		}
+
+		mass_peacekeeper_missions = {
+
+			picture = generic_infantry_bonus
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				rebellious_drift = -0.05
+				stability_factor = 0.05
+				political_power_factor = -0.1
 			}
 
 		}

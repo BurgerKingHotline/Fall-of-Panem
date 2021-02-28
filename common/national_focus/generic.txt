@@ -1727,6 +1727,10 @@ focus_tree = {
 		y = 0
 		cost = 2
 
+		ai_will_do = {
+			factor = 2
+		}
+
 		completion_reward = {
 			add_popularity = {
 				ideology = rebellious
@@ -1744,6 +1748,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				loyalist > 0.65
+			}
+		}
 
 		available = {
 			NOT = {
@@ -1768,6 +1780,14 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				rebellious > 0.34
+			}
+		}
 
 		available = {
 			NOT = {
@@ -1850,6 +1870,10 @@ focus_tree = {
 					end_puppet = ROOT
 				}
 			}
+			if = {
+				limit = { is_in_faction_with = CAP }
+				leave_faction = yes
+			}
 			set_politics = {
 				ruling_party = rebellious
 				elections_allowed = no
@@ -1919,7 +1943,8 @@ focus_tree = {
 
 		available = {
 			any_country = {
-				has_war_with = CAP
+				NOT = { tag = NCL }
+				has_government = rebellious
 			}
 			NOT = {
 				has_government = rebellious

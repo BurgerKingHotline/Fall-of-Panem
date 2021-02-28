@@ -490,7 +490,7 @@ ideas = {
 
 			available = {
 				is_subject = yes
-				num_of_factories > 50 #probably gonna be balanced later
+				num_of_factories > 15 #probably gonna be balanced later
 			}
 
 			cost = 100

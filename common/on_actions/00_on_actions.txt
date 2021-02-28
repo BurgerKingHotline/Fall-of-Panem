@@ -72,4 +72,23 @@ on_actions = {
 		}
 		}
 	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = { has_government = rebellious has_idea = mass_peacekeeper_missions }
+				remove_ideas = mass_peacekeeper_missions
+			}
+			if = {
+				limit = { has_government = rebellious has_idea = increased_export_quotas }
+				remove_ideas = increased_export_quotas
+			}
+			if = {
+				limit = { has_government = rebellious has_idea = extensive_peacekeeper_presence }
+				swap_ideas = {
+					remove_idea = extensive_peacekeeper_presence
+					add_idea = purged_peacekeepers
+				}
+			}
+		}
+	}
 }

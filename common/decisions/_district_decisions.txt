@@ -2,7 +2,7 @@ request_capitol = {
 	
 	request_mobilization = {
 
-		cost = 100
+		cost = 50
 
 		icon = generic_nationalism
 
@@ -40,7 +40,7 @@ request_capitol = {
 
 	promote_self_sufficiency = {
 
-		cost = 75
+		cost = 30
 
 		icon = generic_factory
 
@@ -90,7 +90,7 @@ request_capitol = {
 
 	request_peacekeeper_aid = {
 
-		cost = 50
+		cost = 30
 
 		icon = eng_blackshirt_march
 
@@ -106,6 +106,10 @@ request_capitol = {
 				factor = 1.5
 				rebellious > 0.3
 			}
+			modifier = {
+				factor = 0.5
+				rebellious > 0.4
+			}
 		}
 
 		available = {
@@ -116,7 +120,7 @@ request_capitol = {
 		days_remove = 28
 
 		modifier = {
-			stability_weekly_factor = -0.02
+			stability_weekly_factor = -0.01
 		}
 
 		remove_effect = {
@@ -124,7 +128,412 @@ request_capitol = {
 				ideology = rebellious
 				popularity = -0.05
 			}
+			add_stability = 0.02
 		}
+	}
+
+}
+
+aid_rebel_cells = {
+
+	take_in_rebel_refugees = {
+
+		days_re_enable = 75
+
+		icon = generic_political_discourse
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			any_country = {
+				NOT = { tag = TST }
+				has_government = loyalist
+			}
+		}
+
+		days_remove = 50
+
+		modifier = {
+			weekly_manpower = 100
+			political_power_cost = 0.1
+			consumer_goods_factor = 0.1
+		}
+
+	}
+
+	support_POW_rebel_activity = {
+
+		days_re_enable = 40
+
+		icon = generic_civil_support
+
+		visible = {
+			POW = {
+				has_government = loyalist
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		available = {
+			POW = {
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			POW = {
+				add_timed_idea = {
+					idea = D13_rebel_cells
+					days = 30
+				}
+			}
+		}
+
+	}
+
+	support_CRP_rebel_activity = {
+
+		days_re_enable = 40
+
+		icon = generic_civil_support
+
+		visible = {
+			CRP = {
+				has_government = loyalist
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		available = {
+			CRP = {
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			CRP = {
+				add_timed_idea = {
+					idea = D13_rebel_cells
+					days = 30
+				}
+			}
+		}
+
+	}
+
+	support_TXT_rebel_activity = {
+
+		days_re_enable = 40
+
+		icon = generic_civil_support
+
+		visible = {
+			TXT = {
+				has_government = loyalist
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		available = {
+			TXT = {
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			TXT = {
+				add_timed_idea = {
+					idea = D13_rebel_cells
+					days = 30
+				}
+			}
+		}
+
+	}
+
+	support_TRN_rebel_activity = {
+
+		days_re_enable = 40
+
+		icon = generic_civil_support
+
+		visible = {
+			TRN = {
+				has_government = loyalist
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		available = {
+			TRN = {
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			TRN = {
+				add_timed_idea = {
+					idea = D13_rebel_cells
+					days = 30
+				}
+			}
+		}
+
+	}
+
+	support_GRN_rebel_activity = {
+
+		days_re_enable = 40
+
+		icon = generic_civil_support
+
+		visible = {
+			GRN = {
+				has_government = loyalist
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		available = {
+			GRN = {
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			GRN = {
+				add_timed_idea = {
+					idea = D13_rebel_cells
+					days = 30
+				}
+			}
+		}
+
+	}
+
+	support_MIN_rebel_activity = {
+
+		days_re_enable = 40
+
+		icon = generic_civil_support
+
+		visible = {
+			MIN = {
+				has_government = loyalist
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cost = 25
+
+		available = {
+			MIN = {
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			MIN = {
+				add_timed_idea = {
+					idea = D13_rebel_cells
+					days = 30
+				}
+			}
+		}
+
+	}
+
+}
+
+capitol_decisions = {
+	
+	resource_centralization = {
+
+		icon = steel
+
+		cost = 50
+
+		fire_only_once = yes
+
+		available = {
+			num_subjects > 2
+		}
+
+		days_remove = 40
+
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			25 = {
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+				add_resource = {
+					type = aluminium
+					amount = 2
+				}
+			}
+		}
+
+	}
+
+	demand_increased_exports = {
+
+		icon = generic_factory
+
+		cost = 50
+
+		days_re_enable = 250
+
+		visible = {
+			num_subjects > 2
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			every_country = {
+				limit =  { is_subject_of = CAP }
+				add_timed_idea = {
+					idea = increased_export_quotas
+					days = 200
+				}
+				country_event = district.6
+			}
+		}
+
+	}
+
+	accept_loyal_refugees = {
+
+		icon = generic_political_discourse
+
+		cost = 25
+
+		days_re_enable = 100
+
+		visible = {
+			any_country = {
+				NOT = { OR = { tag = NCL tag = TST } }
+				has_government = rebellious
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		days_remove = 70
+
+		modifier = {
+			consumer_goods_factor = 0.05
+			political_power_cost = 0.1
+			weekly_manpower = 50
+		}
+
+	}
+
+	expand_peacekeeper_duties = {
+
+		icon = oppression
+
+		cost = 100
+
+		days_re_enable = 100
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			num_subjects > 2
+			any_country = {
+				is_subject_of = CAP
+				rebellious > 0.2
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit =  { is_subject_of = CAP }
+				add_timed_idea = {
+					idea = mass_peacekeeper_missions
+					days = 70
+				}
+				country_event = district.7
+			}
+		}
+
+	}
+
+	mobilize_industry = {
+
+		icon = generic_industry
+
+		cost = 75
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			25 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
 	}
 
 }

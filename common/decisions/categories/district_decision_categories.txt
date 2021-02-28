@@ -1,4 +1,5 @@
 request_capitol = {
+	icon = generic_political_actions
 	allowed = {
 		OR = {
 			tag = LXR
@@ -17,7 +18,27 @@ request_capitol = {
 		}
 	}
 
-	available = {
+	visible = {
 		is_subject_of = CAP
+	}
+}
+aid_rebel_cells = {
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		tag = NCL
+	}
+
+	visible = {
+		has_government = rebellious
+	}
+}
+capitol_decisions = {
+	icon = generic_propaganda
+	allowed = {
+		tag = CAP
+	}
+
+	visible = {
+		has_government = loyalist
 	}
 }
